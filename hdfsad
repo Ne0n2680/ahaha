@@ -1,0 +1,11 @@
+
+local m = game.Players.LocalPlayer:GetMouse()
+
+
+m.Button1Down:Connect(function()
+
+	game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(0,-200,0)	
+	wait(0.3)
+	game.Players.LocalPlayer.Character.Humanoid.Health = 0
+
+end)

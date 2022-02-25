@@ -1,5 +1,6 @@
 -- Gui to Lua
 -- Version: 3.2
+--New instance
 
 -- Instances:
 
@@ -19,7 +20,7 @@ Frame.Visible = false
 
 -- Scripts:
 
-local function TBYBFZC_fake_script() -- Frame.LocalScript 
+local function QONY_fake_script() -- Frame.LocalScript 
 	local script = Instance.new('LocalScript', Frame)
 
 	local m = game.Players.LocalPlayer:GetMouse()
@@ -30,13 +31,14 @@ local function TBYBFZC_fake_script() -- Frame.LocalScript
 		game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(0,-200,0)	
 		wait(0.3)
 		game.Players.LocalPlayer.Character.Humanoid.Health = 0
-	script.Parent:Destroy()
+		script.Disabled = true
+		script:Destroy()
 	end)
 end
-coroutine.wrap(TBYBFZC_fake_script)()
-local function MLDMXO_fake_script() -- ScreenGui2.LocalScript 
+coroutine.wrap(QONY_fake_script)()
+local function QCYOP_fake_script() -- ScreenGui2.LocalScript 
 	local script = Instance.new('LocalScript', ScreenGui2)
 
 	
 end
-coroutine.wrap(MLDMXO_fake_script)()
+coroutine.wrap(QCYOP_fake_script)()
